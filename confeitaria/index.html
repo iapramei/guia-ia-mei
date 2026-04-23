@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA para Confeitaria e Doceria — Automatize seu negócio com ferramentas gratuitas</title>
+<meta name="description" content="Aprenda como usar inteligência artificial para automatizar o atendimento, criar conteúdo e vender mais no seu negócio de Confeitaria e Doceria. Ferramentas 100% gratuitas.">
+<link rel="canonical" href="https://iapramei.github.io/guia-ia-mei/confeitaria/">
+<meta property="og:title" content="IA para Confeitaria e Doceria — Automatize seu negócio">
+<meta property="og:description" content="Veja exemplos reais de como usar IA no seu negócio de Confeitaria e Doceria — sem saber de tecnologia e com ferramentas gratuitas.">
+<meta property="og:url" content="https://iapramei.github.io/guia-ia-mei/confeitaria/">
+<meta property="og:site_name" content="IA para MEI">
+<link rel="icon" type="image/x-icon" href="../favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1814;--ink2:#3d3a34;--muted:#7a7569;--paper:#faf9f6;--white:#ffffff;--accent:#e8440a;--al:#fff1ec;--warm:#f5f2eb;--border:#e8e4dc;--green:#1a6b3c;--gl:#e8f5ee}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--ink);text-decoration:none}
+.nav-logo span{color:var(--accent)}
+.nav-back{font-size:14px;color:var(--muted);text-decoration:none;display:flex;align-items:center;gap:6px;transition:color .15s}
+.nav-back:hover{color:var(--ink)}
+.nav-cta{background:var(--accent);color:#fff;font-weight:600;font-size:14px;padding:10px 22px;border-radius:100px;text-decoration:none;transition:opacity .15s}
+.nav-cta:hover{opacity:.9}
+.hero{max-width:900px;margin:0 auto;padding:72px 40px 60px;text-align:center}
+.breadcrumb{font-size:13px;color:var(--muted);margin-bottom:24px}
+.breadcrumb a{color:var(--accent);text-decoration:none}
+.hero-emoji{font-size:56px;margin-bottom:20px;display:block}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--al);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.06em;padding:6px 14px;border-radius:100px;margin-bottom:20px;text-transform:uppercase}
+.hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(32px,5vw,54px);line-height:1.1;letter-spacing:-.02em;margin-bottom:18px}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero-sub{font-size:18px;color:var(--muted);line-height:1.65;max-width:580px;margin:0 auto 36px}
+.btn-primary{background:var(--accent);color:#fff;font-weight:600;font-size:15px;padding:14px 36px;border-radius:100px;text-decoration:none;display:inline-block;transition:opacity .15s,transform .15s}
+.btn-primary:hover{opacity:.9;transform:translateY(-2px)}
+.section{padding:64px 40px;max-width:900px;margin:0 auto}
+.section-tag{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.section-title{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(24px,3.5vw,36px);line-height:1.15;margin-bottom:36px;letter-spacing:-.02em}
+.dores-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:16px}
+.dor-card{background:var(--white);border:1px solid var(--border);border-radius:16px;padding:22px;border-left:4px solid var(--accent);transition:box-shadow .2s}
+.dor-card:hover{box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.dor-title{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:6px}
+.dor-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.exemplos-list{display:flex;flex-direction:column;gap:16px}
+.exemplo-item{display:grid;grid-template-columns:56px 1fr;background:var(--white);border:1px solid var(--border);border-radius:16px;overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.exemplo-item:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(232,68,10,.06)}
+.ex-num{background:var(--al);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:20px;color:var(--accent);border-right:1px solid var(--border)}
+.ex-body{padding:18px 20px}
+.ex-title{font-weight:600;font-size:15px;color:var(--ink);margin-bottom:5px}
+.ex-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.divider{border:none;border-top:1px solid var(--border);margin:0}
+.cta-section{background:var(--accent);padding:64px 40px;text-align:center}
+.cta-section h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(26px,4vw,42px);color:#fff;margin-bottom:12px;letter-spacing:-.02em}
+.cta-section p{font-size:16px;color:#ffd4c2;margin-bottom:32px}
+.btn-white{background:#fff;color:var(--accent);font-weight:700;font-size:16px;padding:16px 44px;border-radius:100px;text-decoration:none;display:inline-block;transition:transform .15s}
+.btn-white:hover{transform:translateY(-2px)}
+.niches-section{padding:64px 40px;max-width:900px;margin:0 auto;text-align:center}
+.niches-grid{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
+.niche-pill{background:var(--white);border:1px solid var(--border);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--ink2);text-decoration:none;display:flex;align-items:center;gap:8px;transition:border-color .15s,background .15s}
+.niche-pill:hover{border-color:var(--accent);background:var(--al)}
+.niche-pill.active{border-color:var(--accent);background:var(--al);color:var(--accent)}
+footer{background:var(--ink);padding:28px 40px;text-align:center}
+footer p{font-size:12px;color:#4a4940}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero>*{animation:fadeUp .6s ease both}
+.hero-emoji{animation-delay:.05s}
+.hero-tag{animation-delay:.1s}
+.hero h1{animation-delay:.18s}
+.hero-sub{animation-delay:.28s}
+.btn-primary{animation-delay:.36s}
+@media(max-width:680px){
+  nav{padding:14px 20px;gap:10px}
+  .nav-back{display:none}
+  .hero,.section,.niches-section{padding:48px 20px}
+  .dores-grid{grid-template-columns:1fr}
+  .cta-section{padding:48px 20px}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="../" class="nav-logo">IA <span>para</span> MEI</a>
+  <a href="../" class="nav-back">← Voltar</a>
+  <a href="https://pay.kiwify.com.br/IvAZYSh" class="nav-cta">Quero o guia — R$67</a>
+</nav>
+
+<section class="hero">
+  <p class="breadcrumb"><a href="../">IA para MEI</a> › Confeitaria e Doceria</p>
+  <span class="hero-emoji">🎂</span>
+  <div class="hero-tag">Guia prático — Edição 2026</div>
+  <h1>Como usar <em>IA</em> no seu<br>Confeitaria e Doceria</h1>
+  <p class="hero-sub">Gerencie encomendas, confirme pedidos e divulgue seus doces — sem sair da cozinha.</p>
+  <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-primary">Ver o guia completo →</a>
+</section>
+
+<hr class="divider">
+
+<section class="section">
+  <p class="section-tag">Dores do dia a dia</p>
+  <h2 class="section-title">O que toma mais tempo no seu negócio?</h2>
+  <div class="dores-grid">
+    <div class="dor-card">
+      <div class="dor-title">Encomendas bagunçadas</div>
+      <div class="dor-desc">Pedidos chegando por WhatsApp, Instagram e indicação — sem um sistema, é fácil perder uma encomenda ou confundir as datas.</div>
+    </div>
+    <div class="dor-card">
+      <div class="dor-title">Orçamento de bolo personalizado</div>
+      <div class="dor-desc">Cada bolo personalizado exige um orçamento diferente — e explicar tudo manualmente para cada cliente consome muito tempo.</div>
+    </div>
+    <div class="dor-card">
+      <div class="dor-title">Fotos lindas, divulgação fraca</div>
+      <div class="dor-desc">Você faz trabalhos incríveis mas não tem tempo de postar com frequência e criar legendas que gerem encomendas.</div>
+    </div>
+    <div class="dor-card">
+      <div class="dor-title">Clientes com dúvidas sobre prazos</div>
+      <div class="dor-desc">Clientes ansiosos perguntando a todo momento se o pedido está pronto — e você no meio do processo de decoração.</div>
+    </div>
+    
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="section">
+  <p class="section-tag">Exemplos reais de uso</p>
+  <h2 class="section-title">O que a IA pode fazer pelo seu Confeitaria e Doceria</h2>
+  <div class="exemplos-list">
+    <div class="exemplo-item">
+      <div class="ex-num">01</div>
+      <div class="ex-body">
+        <div class="ex-title">Ficha de encomenda automática</div>
+        <div class="ex-desc">O cliente entra em contato e a IA já coleta todas as informações: sabor, tamanho, data de entrega, tema e orçamento — organizando tudo para você.</div>
+      </div>
+    </div>
+    <div class="exemplo-item">
+      <div class="ex-num">02</div>
+      <div class="ex-body">
+        <div class="ex-title">Confirmação de pedido e prazo</div>
+        <div class="ex-desc">Após confirmar a encomenda, a IA envia automaticamente um resumo com todos os detalhes e a data de retirada ou entrega.</div>
+      </div>
+    </div>
+    <div class="exemplo-item">
+      <div class="ex-num">03</div>
+      <div class="ex-body">
+        <div class="ex-title">Resposta sobre ingredientes e alergias</div>
+        <div class="ex-desc">O cliente pergunta se o bolo tem glúten ou lactose e a IA responde com as informações que você cadastrou previamente.</div>
+      </div>
+    </div>
+    <div class="exemplo-item">
+      <div class="ex-num">04</div>
+      <div class="ex-body">
+        <div class="ex-title">Legenda para fotos dos doces</div>
+        <div class="ex-desc">A IA cria legendas irresistíveis para as fotos dos seus bolos e doces — com descrição, sabores disponíveis e como encomendar.</div>
+      </div>
+    </div>
+    <div class="exemplo-item">
+      <div class="ex-num">05</div>
+      <div class="ex-body">
+        <div class="ex-title">Lembrete de data especial</div>
+        <div class="ex-desc">A IA lembra os clientes recorrentes sobre datas próximas: 'O aniversário do seu filho está chegando. Quer encomendar o bolo?'</div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<hr class="divider">
+
+<section class="niches-section">
+  <p class="section-tag">Outros segmentos</p>
+  <h2 style="font-family:'Fraunces',serif;font-weight:700;font-size:clamp(22px,3vw,32px);letter-spacing:-.02em;margin-bottom:8px">IA funciona para qualquer MEI</h2>
+  <p style="color:var(--muted);font-size:15px">Explore como a IA pode ajudar em outros tipos de negócio:</p>
+  <div class="niches-grid">
+    <a href="../salao-de-beleza/" class="niche-pill">💇 Salão de Beleza</a>
+    <a href="../delivery/" class="niche-pill">🍱 Marmitex e Delivery</a>
+    <a href="../loja-de-roupas/" class="niche-pill">👗 Loja de Roupas</a>
+    <a href="../prestador-de-servicos/" class="niche-pill">🔧 Prestador de Serviços</a>
+    <a href="../confeitaria/" class="niche-pill active">🎂 Confeitaria e Doceria</a>
+    <a href="../fotografo-designer/" class="niche-pill">📸 Fotógrafo e Designer</a>
+    <a href="../personal-academia/" class="niche-pill">🏋️ Personal Trainer e Academia</a>
+    <a href="../diarista-limpeza/" class="niche-pill">🏠 Diarista e Limpeza</a>
+    
+  </div>
+</section>
+
+<section class="cta-section">
+  <h2>Pronto para automatizar seu Confeitaria e Doceria?</h2>
+  <p>O guia completo ensina cada um desses exemplos, passo a passo, com ferramentas gratuitas.</p>
+  <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-white">Quero o guia agora — R$67 →</a>
+</section>
+
+<footer>
+  <p>© 2026 · IA para MEI · Todos os direitos reservados · @iapramei</p>
+</footer>
+
+</body>
+</html>
