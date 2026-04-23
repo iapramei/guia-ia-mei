@@ -7,12 +7,12 @@
 <meta name="description" content="Aprenda a usar inteligência artificial para automatizar o atendimento no WhatsApp, criar posts e fechar mais vendas. Guia prático para MEIs com 5 módulos e ferramentas 100% gratuitas.">
 <meta name="keywords" content="IA para MEI, automação para pequenos negócios, inteligência artificial MEI, WhatsApp automático, ferramentas de IA gratuitas, guia IA empreendedor">
 <meta name="author" content="IA para MEI">
-<link rel="canonical" href="https://iapramei.netlify.app/">
+<link rel="canonical" href="https://iapramei.github.io/guia-ia-mei/">
 <meta name="google-site-verification" content="e6fecd6a8f45e0ae">
 <meta property="og:type" content="product">
 <meta property="og:title" content="Guia de IA para MEI — Automatize seu negócio de graça">
 <meta property="og:description" content="5 módulos práticos para usar IA no seu negócio: atendimento automático no WhatsApp, posts sem esforço, orçamentos em segundos. Ferramentas 100% gratuitas.">
-<meta property="og:url" content="https://iapramei.netlify.app/">
+<meta property="og:url" content="https://iapramei.github.io/guia-ia-mei/">
 <meta property="og:site_name" content="IA para MEI">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:image" content="https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=128/lQfbqA7A3EmLXyc/capa-guia-ia-meis-2_15e543270f5844cdba7cf175466c599b.png">
@@ -20,504 +20,364 @@
 <meta name="twitter:title" content="Guia de IA para MEI — Automatize seu negócio de graça">
 <meta name="twitter:description" content="5 módulos práticos para usar IA no seu negócio sem saber de tecnologia. Ferramentas 100% gratuitas.">
 <meta name="twitter:image" content="https://aws-assets.kiwify.com.br/cdn-cgi/image/fit=scale-down,width=128/lQfbqA7A3EmLXyc/capa-guia-ia-meis-2_15e543270f5844cdba7cf175466c599b.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Guia de Automações com IA para MEIs — Edição 2026","description":"Guia prático com 5 módulos para MEIs aprenderem a usar inteligência artificial no atendimento, redes sociais e vendas. Ferramentas 100% gratuitas.","url":"https://iapramei.netlify.app/","brand":{"@type":"Brand","name":"IA para MEI"},"offers":{"@type":"Offer","priceCurrency":"BRL","price":"67.00","availability":"https://schema.org/InStock","url":"https://pay.kiwify.com.br/IvAZYSh"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1"}}</script>
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Product","name":"Guia de Automações com IA para MEIs — Edição 2026","description":"Guia prático com 5 módulos para MEIs aprenderem a usar inteligência artificial no atendimento, redes sociais e vendas. Ferramentas 100% gratuitas.","url":"https://iapramei.github.io/guia-ia-mei/","brand":{"@type":"Brand","name":"IA para MEI"},"offers":{"@type":"Offer","priceCurrency":"BRL","price":"67.00","availability":"https://schema.org/InStock","url":"https://pay.kiwify.com.br/IvAZYSh"},"aggregateRating":{"@type":"AggregateRating","ratingValue":"5","reviewCount":"1"}}</script>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,700;1,600&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-  :root {
-    --ink: #0f0e0b;
-    --paper: #f5f2eb;
-    --accent: #e8440a;
-    --accent2: #1a6b3c;
-    --muted: #7a7669;
-    --border: #d4cfc3;
-    --card: #ffffff;
-    --light-bg: #edeae1;
-  }
-
-  html { scroll-behavior: smooth; }
-
-  body {
-    font-family: 'DM Sans', sans-serif;
-    background: var(--paper);
-    color: var(--ink);
-    line-height: 1.6;
-    overflow-x: hidden;
-  }
-
-  /* TYPOGRAPHY */
-  .display { font-family: 'Syne', sans-serif; font-weight: 800; }
-  .heading  { font-family: 'Syne', sans-serif; font-weight: 700; }
-
-  /* NAV */
-  nav {
-    position: sticky; top: 0; z-index: 100;
-    background: var(--ink);
-    padding: 14px 40px;
-    display: flex; justify-content: space-between; align-items: center;
-  }
-  .nav-logo { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 13px; color: var(--paper); letter-spacing: .08em; text-transform: uppercase; }
-  .nav-cta {
-    background: var(--accent); color: #fff;
-    font-family: 'DM Sans', sans-serif; font-weight: 500; font-size: 13px;
-    padding: 8px 20px; border-radius: 4px; text-decoration: none;
-    transition: opacity .15s;
-  }
-  .nav-cta:hover { opacity: .85; }
-
-  /* HERO */
-  .hero {
-    background: var(--ink);
-    padding: 80px 40px 0;
-    overflow: hidden;
-    position: relative;
-  }
-  .hero-tag {
-    display: inline-block;
-    background: var(--accent);
-    color: #fff;
-    font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
-    padding: 5px 14px; border-radius: 2px;
-    margin-bottom: 28px;
-  }
-  .hero h1 {
-    font-family: 'Syne', sans-serif; font-weight: 800;
-    font-size: clamp(42px, 7vw, 86px);
-    color: var(--paper);
-    line-height: 1.0;
-    max-width: 760px;
-    margin-bottom: 28px;
-  }
-  .hero h1 em { color: var(--accent); font-style: normal; }
-  .hero-sub {
-    font-size: 17px; color: #a09e96; max-width: 520px;
-    line-height: 1.65; margin-bottom: 44px;
-  }
-  .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 60px; }
-  .btn-primary {
-    background: var(--accent); color: #fff;
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px;
-    padding: 16px 36px; border-radius: 4px; text-decoration: none;
-    display: inline-block; transition: transform .15s, opacity .15s;
-  }
-  .btn-primary:hover { transform: translateY(-2px); opacity: .9; }
-  .btn-ghost {
-    color: var(--paper); border: 1px solid #3a3930;
-    font-size: 14px; padding: 16px 28px; border-radius: 4px; text-decoration: none;
-    display: inline-block; transition: border-color .15s;
-  }
-  .btn-ghost:hover { border-color: #6a6860; }
-  .hero-price-note { font-size: 13px; color: #6a6860; margin-top: 12px; }
-
-  .hero-visual {
-    margin-top: 48px;
-    background: #1a1916;
-    border-radius: 12px 12px 0 0;
-    border: 1px solid #2e2d28;
-    border-bottom: none;
-    padding: 28px 32px 0;
-    max-width: 680px;
-  }
-  .mock-bar { display: flex; gap: 6px; margin-bottom: 20px; }
-  .mock-dot { width: 10px; height: 10px; border-radius: 50%; }
-  .mock-chat { display: flex; flex-direction: column; gap: 12px; }
-  .msg { padding: 12px 16px; border-radius: 10px; font-size: 13px; line-height: 1.5; max-width: 80%; }
-  .msg-user { background: #2a2925; color: #c8c5bc; align-self: flex-end; border-radius: 10px 2px 10px 10px; }
-  .msg-ai { background: #e8440a18; border: 1px solid #e8440a30; color: #d4c9bc; align-self: flex-start; border-radius: 2px 10px 10px 10px; }
-  .msg-ai strong { color: #f5a07a; font-weight: 500; }
-
-  /* PAIN SECTION */
-  .pain {
-    background: var(--light-bg);
-    padding: 80px 40px;
-  }
-  .section-label {
-    font-size: 11px; font-weight: 500; letter-spacing: .1em; text-transform: uppercase;
-    color: var(--muted); margin-bottom: 16px;
-  }
-  .pain h2 {
-    font-family: 'Syne', sans-serif; font-weight: 700;
-    font-size: clamp(28px, 4vw, 44px);
-    line-height: 1.15; margin-bottom: 48px; max-width: 580px;
-  }
-  .pain-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; max-width: 900px; }
-  .pain-item {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px; padding: 22px 24px;
-    border-left: 3px solid var(--accent);
-  }
-  .pain-item p { font-size: 15px; color: var(--ink); line-height: 1.6; }
-  .pain-item p::before { content: '"'; font-family: 'Syne', sans-serif; font-size: 32px; color: var(--accent); line-height: .5; display: block; margin-bottom: 12px; }
-
-  /* FOR WHO */
-  .forwho { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
-  .forwho h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(26px, 3.5vw, 40px); margin-bottom: 40px; }
-  .segment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
-  .segment {
-    background: var(--light-bg); border: 1px solid var(--border);
-    border-radius: 8px; padding: 20px 16px; text-align: center;
-  }
-  .segment-icon { font-size: 28px; margin-bottom: 8px; }
-  .segment-name { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 13px; }
-
-  /* WHAT YOU GET */
-  .benefits { background: var(--ink); padding: 80px 40px; }
-  .benefits .section-label { color: #6a6860; }
-  .benefits h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); color: var(--paper); margin-bottom: 48px; max-width: 540px; line-height: 1.15; }
-  .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; max-width: 900px; }
-  .benefit-item {
-    background: #1a1916; border: 1px solid #2a2925;
-    padding: 28px 28px; transition: background .15s;
-  }
-  .benefit-item:hover { background: #22211e; }
-  .benefit-num { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 48px; color: #2a2925; line-height: 1; margin-bottom: 14px; }
-  .benefit-title { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 16px; color: var(--paper); margin-bottom: 8px; }
-  .benefit-desc { font-size: 13px; color: #7a7669; line-height: 1.6; }
-
-  /* MODULES */
-  .modules { padding: 80px 40px; max-width: 1100px; margin: 0 auto; }
-  .modules h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(26px, 3.5vw, 40px); margin-bottom: 8px; }
-  .modules-sub { color: var(--muted); font-size: 15px; margin-bottom: 48px; }
-  .module-list { display: flex; flex-direction: column; gap: 0; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; max-width: 780px; }
-  .module-row {
-    display: grid; grid-template-columns: 56px 1fr;
-    border-bottom: 1px solid var(--border);
-    transition: background .15s;
-  }
-  .module-row:last-child { border-bottom: none; }
-  .module-row:hover { background: var(--light-bg); }
-  .mod-num-col {
-    background: var(--light-bg); border-right: 1px solid var(--border);
-    display: flex; align-items: center; justify-content: center;
-    font-family: 'Syne', sans-serif; font-weight: 800; font-size: 18px; color: var(--muted);
-  }
-  .mod-content { padding: 20px 24px; }
-  .mod-title { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 15px; margin-bottom: 5px; }
-  .mod-desc { font-size: 13px; color: var(--muted); line-height: 1.5; }
-  .mod-badge {
-    display: inline-block; font-size: 10px; font-weight: 500; letter-spacing: .06em;
-    text-transform: uppercase; padding: 2px 8px; border-radius: 3px; margin-left: 8px; vertical-align: middle;
-  }
-  .badge-bonus { background: #faeeda; color: #854f0b; }
-
-  /* TOOLS */
-  .tools { background: var(--light-bg); padding: 60px 40px; }
-  .tools h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 26px; margin-bottom: 28px; }
-  .tools-row { display: flex; gap: 10px; flex-wrap: wrap; }
-  .tool-pill {
-    background: var(--card); border: 1px solid var(--border);
-    border-radius: 100px; padding: 8px 20px;
-    font-size: 14px; font-weight: 500; color: var(--ink);
-  }
-
-  /* PRICING */
-  .pricing { padding: 80px 40px; text-align: center; }
-  .pricing h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(28px, 4vw, 44px); margin-bottom: 12px; }
-  .pricing-sub { color: var(--muted); font-size: 16px; margin-bottom: 52px; }
-  .price-box {
-    display: inline-block;
-    background: var(--ink); color: var(--paper);
-    border-radius: 16px; padding: 48px 60px;
-    max-width: 420px; width: 100%;
-  }
-  .price-was { font-size: 15px; color: #6a6860; text-decoration: line-through; margin-bottom: 8px; }
-  .price-big { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 72px; line-height: 1; margin-bottom: 4px; }
-  .price-big span { font-size: 28px; vertical-align: super; margin-right: 4px; }
-  .price-note { font-size: 13px; color: #6a6860; margin-bottom: 32px; }
-  .price-includes { text-align: left; margin-bottom: 32px; }
-  .price-includes li { font-size: 14px; color: #c8c5bc; padding: 6px 0; border-bottom: 1px solid #2a2925; list-style: none; display: flex; gap: 10px; }
-  .price-includes li::before { content: '✓'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
-  .btn-buy {
-    display: block; width: 100%;
-    background: var(--accent); color: #fff;
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px;
-    padding: 18px 0; border-radius: 6px; text-decoration: none;
-    transition: opacity .15s, transform .15s;
-    text-align: center;
-  }
-  .btn-buy:hover { opacity: .9; transform: translateY(-1px); }
-  .guarantee { margin-top: 20px; font-size: 12px; color: #6a6860; }
-
-  /* GUARANTEE BANNER */
-  .guarantee-banner {
-    background: #e8f5ee; border: 1px solid #9fd4b8;
-    border-radius: 10px; padding: 28px 32px;
-    max-width: 640px; margin: 40px auto 0;
-    display: flex; gap: 20px; align-items: flex-start;
-    text-align: left;
-  }
-  .guarantee-icon { font-size: 32px; flex-shrink: 0; }
-  .guarantee-title { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px; color: #1a6b3c; margin-bottom: 6px; }
-  .guarantee-text { font-size: 14px; color: #2d5c42; line-height: 1.6; }
-
-  /* FAQ */
-  .faq { padding: 80px 40px; max-width: 680px; margin: 0 auto; }
-  .faq h2 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: clamp(24px, 3vw, 36px); margin-bottom: 40px; }
-  .faq-item { border-bottom: 1px solid var(--border); padding: 20px 0; cursor: pointer; }
-  .faq-q { font-family: 'Syne', sans-serif; font-weight: 600; font-size: 15px; display: flex; justify-content: space-between; gap: 16px; }
-  .faq-q::after { content: '+'; font-size: 20px; font-weight: 300; color: var(--accent); flex-shrink: 0; transition: transform .2s; }
-  .faq-item.open .faq-q::after { transform: rotate(45deg); }
-  .faq-a { font-size: 14px; color: var(--muted); line-height: 1.7; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s; }
-  .faq-item.open .faq-a { max-height: 200px; padding-top: 12px; }
-
-  /* FINAL CTA */
-  .final-cta {
-    background: var(--accent); padding: 80px 40px; text-align: center;
-  }
-  .final-cta h2 { font-family: 'Syne', sans-serif; font-weight: 800; font-size: clamp(30px, 5vw, 56px); color: #fff; line-height: 1.1; margin-bottom: 16px; }
-  .final-cta p { font-size: 17px; color: #ffd4c2; margin-bottom: 40px; }
-  .btn-white {
-    background: #fff; color: var(--accent);
-    font-family: 'Syne', sans-serif; font-weight: 700; font-size: 16px;
-    padding: 18px 48px; border-radius: 4px; text-decoration: none;
-    display: inline-block; transition: transform .15s, opacity .15s;
-  }
-  .btn-white:hover { transform: translateY(-2px); opacity: .95; }
-
-  /* FOOTER */
-  footer { background: var(--ink); padding: 32px 40px; text-align: center; }
-  footer p { font-size: 12px; color: #4a4940; }
-
-  /* ANIMATIONS */
-  .fade-in { opacity: 0; transform: translateY(20px); animation: fadeIn .6s ease forwards; }
-  @keyframes fadeIn { to { opacity: 1; transform: translateY(0); } }
-  .hero h1 { animation: fadeIn .7s ease .1s both; }
-  .hero-sub { animation: fadeIn .7s ease .25s both; }
-  .hero-actions { animation: fadeIn .7s ease .4s both; }
-  .hero-visual { animation: fadeIn .8s ease .5s both; }
-
-  @media (max-width: 600px) {
-    nav { padding: 14px 20px; }
-    .hero, .pain, .benefits, .modules, .pricing, .faq, .final-cta { padding: 60px 20px; }
-    .forwho, .tools { padding: 60px 20px; }
-    .price-box { padding: 36px 28px; }
-    .price-big { font-size: 56px; }
-  }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--ink:#1a1814;--ink2:#3d3a34;--muted:#7a7569;--paper:#faf9f6;--white:#ffffff;--accent:#e8440a;--accent-light:#fff1ec;--green:#1a6b3c;--green-light:#e8f5ee;--border:#e8e4dc;--warm:#f5f2eb}
+html{scroll-behavior:smooth}
+body{font-family:'Plus Jakarta Sans',sans-serif;background:var(--paper);color:var(--ink);line-height:1.6;overflow-x:hidden}
+nav{background:var(--white);border-bottom:1px solid var(--border);padding:16px 40px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.nav-logo{font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--ink)}
+.nav-logo span{color:var(--accent)}
+.nav-cta{background:var(--accent);color:#fff;font-weight:600;font-size:14px;padding:10px 22px;border-radius:100px;text-decoration:none;transition:opacity .15s,transform .15s}
+.nav-cta:hover{opacity:.9;transform:translateY(-1px)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1100px;margin:0 auto;padding:80px 40px}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:var(--accent-light);color:var(--accent);font-size:12px;font-weight:600;letter-spacing:.06em;padding:6px 14px;border-radius:100px;margin-bottom:24px;text-transform:uppercase}
+.hero-tag::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.hero h1{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(30px,4vw,48px);line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin-bottom:20px}
+.hero h1 em{color:var(--accent);font-style:italic}
+.hero-sub{font-size:16px;color:var(--muted);line-height:1.7;margin-bottom:36px;max-width:480px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.btn-primary{background:var(--accent);color:#fff;font-weight:600;font-size:15px;padding:14px 32px;border-radius:100px;text-decoration:none;transition:opacity .15s,transform .15s;display:inline-block}
+.btn-primary:hover{opacity:.9;transform:translateY(-2px)}
+.btn-ghost{background:transparent;color:var(--ink2);font-weight:500;font-size:15px;padding:14px 24px;border-radius:100px;text-decoration:none;border:1.5px solid var(--border);transition:border-color .15s}
+.btn-ghost:hover{border-color:var(--ink2)}
+.hero-note{font-size:13px;color:var(--muted)}
+.hero-visual{position:relative}
+.hero-card{background:var(--white);border-radius:20px;padding:28px;box-shadow:0 4px 40px rgba(0,0,0,.08);position:relative;overflow:hidden}
+.hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:var(--accent)}
+.chat-header{display:flex;align-items:center;gap:10px;margin-bottom:20px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+.chat-avatar{width:36px;height:36px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;font-size:16px;color:white;font-weight:700;font-family:'Fraunces',serif}
+.chat-name{font-weight:600;font-size:14px;color:var(--ink)}
+.chat-status{font-size:11px;color:#25d366}
+.chat-msg{margin-bottom:10px}
+.msg-bubble{max-width:78%;padding:10px 14px;border-radius:12px;font-size:13px;line-height:1.5}
+.msg-in{background:var(--warm);color:var(--ink2);border-radius:4px 12px 12px 12px}
+.msg-out{background:#dcf8c6;color:var(--ink);margin-left:auto;border-radius:12px 4px 12px 12px}
+.msg-label{font-size:10px;color:var(--muted);margin-bottom:4px;font-weight:500}
+.msg-label.right{text-align:right;color:var(--accent)}
+.float-badge{margin-top:20px;background:var(--ink);color:var(--white);border-radius:10px;padding:10px 16px;font-size:13px;font-weight:600;text-align:center}
+.float-badge span{color:var(--accent)}
+.stats-bar{background:var(--ink);padding:40px}
+.stats-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);text-align:center}
+.stat{padding:0 20px;border-right:1px solid #2e2d28}
+.stat:last-child{border-right:none}
+.stat-num{font-family:'Fraunces',serif;font-weight:700;font-size:40px;color:var(--accent);line-height:1;margin-bottom:6px}
+.stat-lbl{font-size:13px;color:#7a7669;line-height:1.4}
+.section-tag{font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:12px}
+.section-title{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(24px,3.5vw,38px);line-height:1.15;margin-bottom:48px;letter-spacing:-.02em;max-width:560px}
+.pain-section{background:var(--warm);padding:80px 40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.pain-inner{max-width:1100px;margin:0 auto}
+.pain-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+.pain-card{background:var(--white);border-radius:16px;padding:24px;border:1px solid var(--border);transition:box-shadow .2s}
+.pain-card:hover{box-shadow:0 4px 24px rgba(0,0,0,.06)}
+.pain-icon{width:44px;height:44px;border-radius:12px;background:var(--accent-light);display:flex;align-items:center;justify-content:center;margin-bottom:14px;font-size:20px}
+.pain-title{font-weight:600;font-size:15px;margin-bottom:6px;color:var(--ink)}
+.pain-desc{font-size:13px;color:var(--muted);line-height:1.6}
+.forwho{padding:80px 40px}
+.forwho-inner{max-width:1100px;margin:0 auto}
+.forwho-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;margin-top:48px}
+.segment-list{display:flex;flex-wrap:wrap;gap:10px}
+.segment-pill{background:var(--white);border:1px solid var(--border);border-radius:100px;padding:10px 18px;font-size:14px;font-weight:500;color:var(--ink2);display:flex;align-items:center;gap:8px;transition:border-color .15s,background .15s}
+.segment-pill:hover{border-color:var(--accent);background:var(--accent-light)}
+.forwho-img{background:var(--warm);border-radius:20px;padding:24px;border:1px solid var(--border);display:flex;flex-direction:column;gap:10px}
+.forwho-row{background:var(--white);border-radius:12px;padding:14px 18px;display:flex;align-items:center;gap:14px;border:1px solid var(--border)}
+.forwho-icon{font-size:20px}
+.forwho-text strong{display:block;font-size:14px;font-weight:600;color:var(--ink)}
+.forwho-text span{font-size:12px;color:var(--muted)}
+.forwho-check{margin-left:auto;width:22px;height:22px;border-radius:50%;background:var(--green-light);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0}
+.benefits{background:var(--ink);padding:80px 40px}
+.benefits-inner{max-width:1100px;margin:0 auto}
+.benefits .section-tag{color:#6a6860}
+.benefits .section-title{color:#f5f2eb;max-width:500px}
+.benefits-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#2a2925;margin-top:48px;border-radius:16px;overflow:hidden}
+.benefit{background:#1a1916;padding:28px;transition:background .15s}
+.benefit:hover{background:#1f1e1b}
+.benefit-num{font-family:'Fraunces',serif;font-size:52px;font-weight:700;color:#252320;line-height:1;margin-bottom:14px}
+.benefit-title{font-weight:600;font-size:16px;color:#f5f2eb;margin-bottom:8px}
+.benefit-desc{font-size:13px;color:#7a7669;line-height:1.6}
+.modules{padding:80px 40px}
+.modules-inner{max-width:1100px;margin:0 auto}
+.modules-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:48px}
+.module-list{display:flex;flex-direction:column;gap:10px}
+.module-item{display:grid;grid-template-columns:52px 1fr;background:var(--white);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:border-color .15s,box-shadow .15s}
+.module-item:hover{border-color:var(--accent);box-shadow:0 4px 20px rgba(232,68,10,.08)}
+.mod-num{background:var(--warm);display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-weight:700;font-size:18px;color:var(--accent);border-right:1px solid var(--border)}
+.mod-body{padding:16px 18px}
+.mod-title{font-weight:600;font-size:14px;color:var(--ink);margin-bottom:4px}
+.mod-desc{font-size:12px;color:var(--muted);line-height:1.5}
+.modules-aside{background:var(--warm);border-radius:20px;padding:28px;border:1px solid var(--border);position:sticky;top:100px}
+.aside-title{font-family:'Fraunces',serif;font-weight:700;font-size:22px;margin-bottom:6px;letter-spacing:-.02em}
+.aside-sub{font-size:14px;color:var(--muted);margin-bottom:20px}
+.aside-items{display:flex;flex-direction:column;gap:8px;margin-bottom:24px}
+.aside-item{display:flex;gap:10px;align-items:flex-start;font-size:13px;color:var(--ink2)}
+.aside-check{width:18px;height:18px;border-radius:50%;background:var(--green-light);color:var(--green);display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px}
+.aside-price{margin-bottom:16px}
+.price-was{font-size:13px;color:var(--muted);text-decoration:line-through}
+.price-big{font-family:'Fraunces',serif;font-weight:700;font-size:48px;color:var(--ink);line-height:1}
+.price-big sup{font-size:22px;vertical-align:super}
+.price-note{font-size:12px;color:var(--muted);margin-top:4px}
+.tools{background:var(--warm);padding:60px 40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.tools-inner{max-width:1100px;margin:0 auto}
+.tools-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}
+.tool-chip{background:var(--white);border:1px solid var(--border);border-radius:100px;padding:10px 20px;font-size:14px;font-weight:500;color:var(--ink2);transition:border-color .15s,color .15s}
+.tool-chip:hover{border-color:var(--accent);color:var(--accent)}
+.guarantee-banner{max-width:700px;margin:28px auto 0;background:var(--green-light);border:1px solid #9fd4b8;border-radius:14px;padding:20px 24px;display:flex;gap:16px;align-items:flex-start}
+.g-icon{font-size:28px;flex-shrink:0}
+.g-title{font-weight:600;font-size:14px;color:var(--green);margin-bottom:4px}
+.g-text{font-size:13px;color:#2d5c42;line-height:1.6}
+.pricing{padding:80px 40px;text-align:center}
+.pricing-inner{max-width:460px;margin:0 auto}
+.price-card{background:var(--ink);border-radius:24px;padding:40px;margin-top:40px;text-align:left}
+.price-card .price-was{color:#6a6860}
+.price-card .price-big{color:#fff}
+.price-card .price-note{color:#6a6860;margin-bottom:24px}
+.price-includes{margin-bottom:24px}
+.price-includes li{font-size:14px;color:#c8c5bc;padding:8px 0;border-bottom:1px solid #2a2925;list-style:none;display:flex;gap:10px;align-items:flex-start}
+.price-includes li::before{content:'✓';color:var(--accent);font-weight:700;flex-shrink:0}
+.btn-buy{display:block;width:100%;background:var(--accent);color:#fff;font-weight:700;font-size:16px;padding:18px;border-radius:100px;text-decoration:none;text-align:center;transition:opacity .15s,transform .15s}
+.btn-buy:hover{opacity:.9;transform:translateY(-1px)}
+.pay-note{font-size:12px;color:#6a6860;margin-top:12px;text-align:center}
+.faq{padding:80px 40px;max-width:680px;margin:0 auto}
+.faq h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(24px,3.5vw,36px);margin-bottom:40px;letter-spacing:-.02em}
+.faq-item{border-bottom:1px solid var(--border)}
+.faq-q{font-weight:600;font-size:15px;padding:20px 0;display:flex;justify-content:space-between;align-items:center;cursor:pointer;gap:16px;color:var(--ink)}
+.faq-q::after{content:'+';font-size:22px;font-weight:300;color:var(--accent);flex-shrink:0;transition:transform .2s}
+.faq-item.open .faq-q::after{transform:rotate(45deg)}
+.faq-a{font-size:14px;color:var(--muted);line-height:1.7;max-height:0;overflow:hidden;transition:max-height .3s,padding .3s}
+.faq-item.open .faq-a{max-height:200px;padding-bottom:20px}
+.final-cta{background:var(--accent);padding:80px 40px;text-align:center}
+.final-cta h2{font-family:'Fraunces',serif;font-weight:700;font-size:clamp(28px,5vw,50px);color:#fff;line-height:1.1;margin-bottom:14px;letter-spacing:-.02em}
+.final-cta p{font-size:17px;color:#ffd4c2;margin-bottom:36px}
+.btn-white{background:#fff;color:var(--accent);font-weight:700;font-size:16px;padding:18px 48px;border-radius:100px;text-decoration:none;display:inline-block;transition:transform .15s,opacity .15s}
+.btn-white:hover{transform:translateY(-2px);opacity:.95}
+footer{background:var(--ink);padding:28px 40px;text-align:center;border-top:1px solid #2a2925}
+footer p{font-size:12px;color:#4a4940}
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+.hero-content>*{animation:fadeUp .6s ease both}
+.hero-tag{animation-delay:.05s}
+.hero h1{animation-delay:.15s}
+.hero-sub{animation-delay:.25s}
+.hero-actions{animation-delay:.35s}
+.hero-note{animation-delay:.42s}
+.hero-visual{animation:fadeUp .7s ease .3s both}
+@media(max-width:768px){
+  nav{padding:14px 20px}
+  .hero{grid-template-columns:1fr;gap:40px;padding:48px 20px}
+  .hero-visual{order:-1}
+  .stats-inner{grid-template-columns:repeat(2,1fr)}
+  .stat{padding:20px;border-right:none;border-bottom:1px solid #2e2d28}
+  .stat:nth-child(odd){border-right:1px solid #2e2d28}
+  .stat:last-child{border-bottom:none}
+  .forwho-grid,.modules-grid,.benefits-grid{grid-template-columns:1fr}
+  .modules-aside{position:static}
+  .pain-section,.forwho,.benefits,.modules,.tools,.pricing,.final-cta,.faq{padding:60px 20px}
+}
 </style>
 </head>
 <body>
 
 <nav>
-  <span class="nav-logo">Guia IA para MEIs</span>
-  <a href="#pricing" class="nav-cta">Quero o guia — R$67</a>
+  <span class="nav-logo">IA <span>para</span> MEI</span>
+  <a href="https://pay.kiwify.com.br/IvAZYSh" class="nav-cta">Quero o guia — R$67</a>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
-  <span class="hero-tag">Novo — Edição 2026</span>
-  <h1>Deixa a <em>IA trabalhar</em> enquanto você cuida do seu negócio</h1>
-  <p class="hero-sub">O guia prático que ensina qualquer MEI a usar inteligência artificial para automatizar atendimento, criar conteúdo e fechar mais vendas — sem precisar saber nada de tecnologia.</p>
-  <div class="hero-actions">
-    <a href="#pricing" class="btn-primary">Quero automatizar meu negócio →</a>
-    <a href="#modules" class="btn-ghost">Ver o que está incluso</a>
-  </div>
-  <p class="hero-price-note">Por apenas R$67 — acesso imediato e vitalício</p>
-
-  <div class="hero-visual">
-    <div class="mock-bar">
-      <div class="mock-dot" style="background:#ff5f57"></div>
-      <div class="mock-dot" style="background:#febc2e"></div>
-      <div class="mock-dot" style="background:#28c840"></div>
+<section style="background:var(--paper);border-bottom:1px solid var(--border)">
+  <div class="hero">
+    <div class="hero-content">
+      <div class="hero-tag">Edição 2026 — Novo</div>
+      <h1>Automatize seu negócio com <em>IA</em> — sem saber de tecnologia</h1>
+      <p class="hero-sub">O guia prático que ensina qualquer MEI a usar inteligência artificial para atender clientes, criar conteúdo e fechar mais vendas, com ferramentas 100% gratuitas.</p>
+      <div class="hero-actions">
+        <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-primary">Quero o guia agora →</a>
+        <a href="#modulos" class="btn-ghost">Ver o que está incluso</a>
+      </div>
+      <p class="hero-note">Por apenas R$67 · Acesso imediato e vitalício · PDF + templates</p>
     </div>
-    <div class="mock-chat">
-      <div class="msg msg-user">Oi, quanto custa um bolo de chocolate para 20 pessoas?</div>
-      <div class="msg msg-ai"><strong>IA respondendo por você:</strong> Olá! Tudo bem? O bolo de chocolate para 20 pessoas sai por R$180. Entrego em até 3 dias úteis. Posso confirmar o pedido? 🍫</div>
-      <div class="msg msg-user">Que horas vocês abrem amanhã?</div>
-      <div class="msg msg-ai"><strong>IA respondendo por você:</strong> Amanhã abrimos às 9h e funcionamos até as 18h. Quer já agendar uma visita ou prefere fazer seu pedido aqui mesmo? 😊</div>
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="chat-header">
+          <div class="chat-avatar">W</div>
+          <div><div class="chat-name">Seu negócio</div><div class="chat-status">online agora</div></div>
+        </div>
+        <div class="chat-msg"><div class="msg-label">Cliente</div><div class="msg-bubble msg-in">Oi, quanto custa para 20 pessoas?</div></div>
+        <div class="chat-msg"><div class="msg-label right">IA respondendo por você</div><div class="msg-bubble msg-out">Olá! O pacote para 20 pessoas sai por R$180, com entrega em até 3 dias úteis. Posso confirmar o pedido?</div></div>
+        <div class="chat-msg"><div class="msg-label">Cliente</div><div class="msg-bubble msg-in">Que horas vocês abrem amanhã?</div></div>
+        <div class="chat-msg"><div class="msg-label right">IA respondendo por você</div><div class="msg-bubble msg-out">Amanhã abrimos às 9h até as 18h. Quer já agendar?</div></div>
+        <div class="float-badge">Você estava <span>dormindo</span> 😴</div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PAIN -->
-<section class="pain">
-  <div style="max-width:900px; margin: 0 auto;">
-    <p class="section-label">Você se identifica com isso?</p>
-    <h2>Seu negócio cresceria muito mais se você não perdesse horas nessas tarefas</h2>
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-num">3h</div><div class="stat-lbl">economizadas<br>por dia</div></div>
+    <div class="stat"><div class="stat-num">24h</div><div class="stat-lbl">atendimento<br>automático</div></div>
+    <div class="stat"><div class="stat-num">5</div><div class="stat-lbl">módulos<br>práticos</div></div>
+    <div class="stat"><div class="stat-num">100%</div><div class="stat-lbl">ferramentas<br>gratuitas</div></div>
+  </div>
+</div>
+
+<section class="pain-section">
+  <div class="pain-inner">
+    <p class="section-tag">Você se identifica?</p>
+    <h2 class="section-title">Seu negócio cresceria muito mais sem essas tarefas</h2>
     <div class="pain-grid">
-      <div class="pain-item"><p>Fico respondendo as mesmas perguntas no WhatsApp o dia inteiro e não consigo focar no que importa</p></div>
-      <div class="pain-item"><p>Não tenho tempo de postar nas redes sociais e quando posto fica sem graça ou sem resultados</p></div>
-      <div class="pain-item"><p>Perco clientes porque demoro para responder ou para enviar um orçamento</p></div>
-      <div class="pain-item"><p>Sei que existe IA mas não sei por onde começar sem gastar uma fortuna</p></div>
+      <div class="pain-card"><div class="pain-icon">💬</div><div class="pain-title">WhatsApp o dia todo</div><div class="pain-desc">Respondendo as mesmas perguntas repetidas vezes em vez de focar no que importa.</div></div>
+      <div class="pain-card"><div class="pain-icon">📱</div><div class="pain-title">Sem tempo para as redes</div><div class="pain-desc">Quando posta, fica sem ideia. Quando tem ideia, não tem tempo para criar.</div></div>
+      <div class="pain-card"><div class="pain-icon">📋</div><div class="pain-title">Orçamentos manuais</div><div class="pain-desc">Cada proposta feita do zero, levando minutos que poderiam ser segundos.</div></div>
+      <div class="pain-card"><div class="pain-icon">🤖</div><div class="pain-title">IA parece complicada</div><div class="pain-desc">Você sabe que existe, mas não sabe por onde começar sem gastar uma fortuna.</div></div>
     </div>
   </div>
 </section>
 
-<!-- FOR WHO -->
 <section class="forwho">
-  <p class="section-label">Este guia é para você que tem</p>
-  <h2>Feito para os negócios mais comuns do Brasil</h2>
-  <div class="segment-grid">
-    <div class="segment"><div class="segment-icon">💇</div><div class="segment-name">Salão de beleza</div></div>
-    <div class="segment"><div class="segment-icon">🍱</div><div class="segment-name">Marmitex / delivery</div></div>
-    <div class="segment"><div class="segment-icon">👗</div><div class="segment-name">Loja de roupas</div></div>
-    <div class="segment"><div class="segment-icon">🔧</div><div class="segment-name">Prestador de serviços</div></div>
-    <div class="segment"><div class="segment-icon">🎂</div><div class="segment-name">Confeitaria / doceria</div></div>
-    <div class="segment"><div class="segment-icon">📸</div><div class="segment-name">Fotógrafo / designer</div></div>
-    <div class="segment"><div class="segment-icon">🏋️</div><div class="segment-name">Personal / academia</div></div>
-    <div class="segment"><div class="segment-icon">🏠</div><div class="segment-name">Diarista / limpeza</div></div>
+  <div class="forwho-inner">
+    <p class="section-tag">Para quem é</p>
+    <h2 class="section-title">Feito para os negócios mais comuns do Brasil</h2>
+    <div class="forwho-grid">
+      <div class="segment-list">
+        <span class="segment-pill">💇 Salão de beleza</span>
+        <span class="segment-pill">🍱 Marmitex / delivery</span>
+        <span class="segment-pill">👗 Loja de roupas</span>
+        <span class="segment-pill">🔧 Prestador de serviços</span>
+        <span class="segment-pill">🎂 Confeitaria / doceria</span>
+        <span class="segment-pill">📸 Fotógrafo / designer</span>
+        <span class="segment-pill">🏋️ Personal / academia</span>
+        <span class="segment-pill">🏠 Diarista / limpeza</span>
+      </div>
+      <div class="forwho-img">
+        <div class="forwho-row"><span class="forwho-icon">💬</span><div class="forwho-text"><strong>Atendimento automático</strong><span>WhatsApp respondendo por você</span></div><div class="forwho-check">✓</div></div>
+        <div class="forwho-row"><span class="forwho-icon">📲</span><div class="forwho-text"><strong>Posts sem esforço</strong><span>Semana criada em 1 hora com IA</span></div><div class="forwho-check">✓</div></div>
+        <div class="forwho-row"><span class="forwho-icon">📄</span><div class="forwho-text"><strong>Orçamentos rápidos</strong><span>Propostas prontas em segundos</span></div><div class="forwho-check">✓</div></div>
+        <div class="forwho-row"><span class="forwho-icon">🛠️</span><div class="forwho-text"><strong>Tudo gratuito</strong><span>Sem pagar nada para começar</span></div><div class="forwho-check">✓</div></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- BENEFITS -->
 <section class="benefits">
-  <div style="max-width: 1000px; margin: 0 auto;">
-    <p class="section-label">O que você vai conquistar</p>
-    <h2>Resultados reais para quem não tem tempo a perder</h2>
+  <div class="benefits-inner">
+    <p class="section-tag">O que você vai conquistar</p>
+    <h2 class="section-title">Resultados reais para quem não tem tempo a perder</h2>
     <div class="benefits-grid">
-      <div class="benefit-item"><div class="benefit-num">01</div><div class="benefit-title">Até 3h por dia de volta</div><div class="benefit-desc">Automatize as tarefas que consomem seu tempo: respostas, agendamentos, orçamentos e postagens.</div></div>
-      <div class="benefit-item"><div class="benefit-num">02</div><div class="benefit-title">Atendimento 24h no WhatsApp</div><div class="benefit-desc">Responda clientes mesmo quando está dormindo, sem pagar funcionário ou plano caro.</div></div>
-      <div class="benefit-item"><div class="benefit-num">03</div><div class="benefit-title">Conteúdo semanal em 1 hora</div><div class="benefit-desc">Nunca mais fique sem post. A IA cria legendas, ideias e artes para sua semana inteira em minutos.</div></div>
-      <div class="benefit-item"><div class="benefit-num">04</div><div class="benefit-title">Orçamentos em segundos</div><div class="benefit-desc">Templates inteligentes que geram propostas profissionais sem você precisar digitar do zero.</div></div>
-      <div class="benefit-item"><div class="benefit-num">05</div><div class="benefit-title">Ferramentas 100% gratuitas</div><div class="benefit-desc">Tudo que você vai aprender no guia é gratuito ou tem plano grátis que resolve para o MEI.</div></div>
-      <div class="benefit-item"><div class="benefit-num">06</div><div class="benefit-title">Linguagem simples, sem tecniquês</div><div class="benefit-desc">Cada passo explicado com prints e exemplos reais. Se você usa WhatsApp, você consegue fazer.</div></div>
+      <div class="benefit"><div class="benefit-num">01</div><div class="benefit-title">Até 3h por dia de volta</div><div class="benefit-desc">Automatize respostas, agendamentos, orçamentos e posts — tudo que consome seu tempo hoje.</div></div>
+      <div class="benefit"><div class="benefit-num">02</div><div class="benefit-title">Atendimento 24h no WhatsApp</div><div class="benefit-desc">Responda clientes enquanto dorme, sem pagar funcionário nem plano caro.</div></div>
+      <div class="benefit"><div class="benefit-num">03</div><div class="benefit-title">Conteúdo semanal em 1 hora</div><div class="benefit-desc">A IA cria legendas, ideias de posts e artes para sua semana inteira em minutos.</div></div>
+      <div class="benefit"><div class="benefit-num">04</div><div class="benefit-title">Orçamentos em segundos</div><div class="benefit-desc">Templates inteligentes que geram propostas profissionais sem digitar do zero.</div></div>
+      <div class="benefit"><div class="benefit-num">05</div><div class="benefit-title">Ferramentas 100% gratuitas</div><div class="benefit-desc">Tudo que você vai aprender tem plano grátis que resolve para o MEI.</div></div>
+      <div class="benefit"><div class="benefit-num">06</div><div class="benefit-title">Linguagem simples</div><div class="benefit-desc">Cada passo com prints e exemplos reais. Se usa WhatsApp, consegue fazer.</div></div>
     </div>
   </div>
 </section>
 
-<!-- MODULES -->
-<section class="modules" id="modules">
-  <p class="section-label">O que está incluso</p>
-  <h2>5 módulos práticos e diretos ao ponto</h2>
-  <p class="modules-sub">Sem enrolação. Cada módulo é um problema real com a solução na sua mão.</p>
-  <div class="module-list">
-    <div class="module-row">
-      <div class="mod-num-col">01</div>
-      <div class="mod-content">
-        <div class="mod-title">Por que a IA é a sua melhor funcionária</div>
-        <div class="mod-desc">Entenda o que a IA pode (e não pode) fazer pelo seu negócio. Contexto rápido, sem jargão, com exemplos do seu dia a dia.</div>
+<section class="modules" id="modulos">
+  <div class="modules-inner">
+    <p class="section-tag">O que está incluso</p>
+    <h2 class="section-title">5 módulos práticos e diretos ao ponto</h2>
+    <div class="modules-grid">
+      <div class="module-list">
+        <div class="module-item"><div class="mod-num">01</div><div class="mod-body"><div class="mod-title">Por que a IA é a sua melhor funcionária</div><div class="mod-desc">Entenda o que a IA pode fazer pelo seu negócio. Sem jargão, com exemplos do dia a dia.</div></div></div>
+        <div class="module-item"><div class="mod-num">02</div><div class="mod-body"><div class="mod-title">Atendimento automático no WhatsApp</div><div class="mod-desc">Configure respostas automáticas inteligentes. Clientes atendidos, você descansando.</div></div></div>
+        <div class="module-item"><div class="mod-num">03</div><div class="mod-body"><div class="mod-title">Redes sociais sem esforço</div><div class="mod-desc">Rotina semanal de conteúdo com IA: legendas, posts e artes em menos de 1 hora.</div></div></div>
+        <div class="module-item"><div class="mod-num">04</div><div class="mod-body"><div class="mod-title">Orçamentos, propostas e e-mails</div><div class="mod-desc">Templates que a IA preenche por você. Orçamento em 30 segundos, proposta em 2 minutos.</div></div></div>
+        <div class="module-item"><div class="mod-num">05</div><div class="mod-body"><div class="mod-title">Ferramentas gratuitas essenciais</div><div class="mod-desc">Curadoria de 10 ferramentas testadas com passo a passo de configuração.</div></div></div>
       </div>
-    </div>
-    <div class="module-row">
-      <div class="mod-num-col">02</div>
-      <div class="mod-content">
-        <div class="mod-title">Atendimento automático no WhatsApp</div>
-        <div class="mod-desc">Configure respostas automáticas, triagem de mensagens e respostas inteligentes. Clientes atendidos, você descansando.</div>
-      </div>
-    </div>
-    <div class="module-row">
-      <div class="mod-num-col">03</div>
-      <div class="mod-content">
-        <div class="mod-title">Redes sociais sem esforço</div>
-        <div class="mod-desc">Rotina semanal de conteúdo com IA: legendas para Instagram, ideias de posts e artes no Canva em menos de 1 hora.</div>
-      </div>
-    </div>
-    <div class="module-row">
-      <div class="mod-num-col">04</div>
-      <div class="mod-content">
-        <div class="mod-title">Orçamentos, propostas e e-mails</div>
-        <div class="mod-desc">Templates que a IA preenche para você. Orçamento em 30 segundos, proposta profissional em 2 minutos, follow-up automático.</div>
-      </div>
-    </div>
-    <div class="module-row">
-      <div class="mod-num-col">05</div>
-      <div class="mod-content">
-        <div class="mod-title">As melhores ferramentas gratuitas <span class="mod-badge badge-bonus">bônus</span></div>
-        <div class="mod-desc">Curadoria de 10 ferramentas testadas: ChatGPT, Make, Canva AI, Tidio, Notion AI e mais — com passo a passo de configuração.</div>
+      <div class="modules-aside">
+        <div class="aside-title">Guia completo</div>
+        <p class="aside-sub">Tudo que você precisa para começar hoje</p>
+        <div class="aside-items">
+          <div class="aside-item"><div class="aside-check">✓</div>5 módulos completos em PDF</div>
+          <div class="aside-item"><div class="aside-check">✓</div>Pack de prompts prontos para WhatsApp</div>
+          <div class="aside-item"><div class="aside-check">✓</div>Planilha de automação de atendimento</div>
+          <div class="aside-item"><div class="aside-check">✓</div>Templates de orçamento e proposta</div>
+          <div class="aside-item"><div class="aside-check">✓</div>Bônus: 10 ferramentas gratuitas com tutorial</div>
+          <div class="aside-item"><div class="aside-check">✓</div>Atualizações gratuitas para sempre</div>
+        </div>
+        <div class="aside-price">
+          <div class="price-was">De R$127</div>
+          <div class="price-big"><sup>R$</sup>67</div>
+          <div class="price-note">pagamento único · acesso vitalício</div>
+        </div>
+        <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-primary" style="display:block;text-align:center;border-radius:100px">Quero o guia agora →</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- TOOLS -->
 <section class="tools">
-  <div style="max-width: 900px; margin: 0 auto;">
-    <p class="section-label">Ferramentas ensinadas no guia</p>
-    <h2>Você vai dominar essas ferramentas</h2>
+  <div class="tools-inner">
+    <p class="section-tag">Ferramentas ensinadas no guia</p>
+    <h2 class="section-title" style="margin-bottom:0">Você vai dominar essas ferramentas</h2>
     <div class="tools-row">
-      <span class="tool-pill">ChatGPT</span>
-      <span class="tool-pill">Make (Integromat)</span>
-      <span class="tool-pill">Canva AI</span>
-      <span class="tool-pill">Tidio</span>
-      <span class="tool-pill">Notion AI</span>
-      <span class="tool-pill">Google Gemini</span>
-      <span class="tool-pill">ManyChat</span>
-      <span class="tool-pill">Google Sheets + IA</span>
+      <span class="tool-chip">ChatGPT</span>
+      <span class="tool-chip">Make (Integromat)</span>
+      <span class="tool-chip">Canva AI</span>
+      <span class="tool-chip">Tidio</span>
+      <span class="tool-chip">Notion AI</span>
+      <span class="tool-chip">Google Gemini</span>
+      <span class="tool-chip">ManyChat</span>
+      <span class="tool-chip">Google Sheets + IA</span>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <p class="section-label">Investimento</p>
-  <h2>Um preço justo para quem trabalha duro</h2>
-  <p class="pricing-sub">Menos que um almoço por fora. Com retorno que você sente na primeira semana.</p>
-
-  <div class="price-box">
-    <p class="price-was">De R$127</p>
-    <div class="price-big"><span>R$</span>67</div>
-    <p class="price-note">pagamento único · acesso vitalício · PDF + templates</p>
-    <ul class="price-includes">
-      <li>5 módulos completos em PDF</li>
-      <li>Pack de prompts prontos para WhatsApp</li>
-      <li>Planilha de automação de atendimento</li>
-      <li>Templates de orçamento e proposta</li>
-      <li>Bônus: 10 ferramentas gratuitas com tutorial</li>
-      <li>Atualizações gratuitas para sempre</li>
-    </ul>
-    <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-buy">Quero o guia agora por R$67 →</a>
-    <p class="guarantee" style="color:#6a6860; margin-top:12px;">Cartão, Pix ou boleto · Acesso imediato</p>
-  </div>
-
-  <div class="guarantee-banner">
-    <div class="guarantee-icon">🛡️</div>
-    <div>
-      <div class="guarantee-title">Garantia de 7 dias sem perguntas</div>
-      <div class="guarantee-text">Se você aplicar o que está no guia e não ver resultado nenhum em 7 dias, devolvemos 100% do seu dinheiro. Sem burocracia, sem questionamento.</div>
+<section class="pricing">
+  <div class="pricing-inner">
+    <p class="section-tag">Investimento</p>
+    <h2 class="section-title" style="text-align:center;max-width:100%">Um preço justo para quem trabalha duro</h2>
+    <p style="text-align:center;color:var(--muted);font-size:15px">Menos que um almoço fora. Com retorno que você sente na primeira semana.</p>
+    <div class="price-card">
+      <div class="price-was">De R$127</div>
+      <div class="price-big"><sup>R$</sup>67</div>
+      <div class="price-note">pagamento único · acesso vitalício · PDF + templates</div>
+      <ul class="price-includes">
+        <li>5 módulos completos em PDF</li>
+        <li>Pack de prompts prontos para WhatsApp</li>
+        <li>Planilha de automação de atendimento</li>
+        <li>Templates de orçamento e proposta</li>
+        <li>Bônus: 10 ferramentas gratuitas com tutorial</li>
+        <li>Atualizações gratuitas para sempre</li>
+      </ul>
+      <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-buy">Quero o guia agora por R$67 →</a>
+      <p class="pay-note">Cartão, Pix ou boleto · Acesso imediato</p>
+    </div>
+    <div class="guarantee-banner">
+      <div class="g-icon">🛡️</div>
+      <div><div class="g-title">Garantia de 7 dias sem perguntas</div><div class="g-text">Se não gostar, devolvemos 100% do seu dinheiro. Sem burocracia, sem questionamento.</div></div>
     </div>
   </div>
 </section>
 
-<!-- FAQ -->
 <section class="faq">
   <h2>Perguntas frequentes</h2>
-
-  <div class="faq-item">
-    <div class="faq-q">Preciso saber de tecnologia para usar o guia?</div>
-    <div class="faq-a">Não. O guia foi feito exatamente para quem não tem experiência com tecnologia. Cada passo tem print de tela e explicação simples. Se você consegue usar o WhatsApp, você consegue seguir o guia.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">As ferramentas ensinadas são pagas?</div>
-    <div class="faq-a">Todas as ferramentas principais têm plano gratuito que é mais do que suficiente para um MEI começar. O guia foca em soluções que não precisam de assinatura para funcionar.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">Em quanto tempo vejo resultado?</div>
-    <div class="faq-a">A maioria dos compradores configura a automação de atendimento no WhatsApp no primeiro dia. Para sentir o impacto completo — mais tempo livre, mais conteúdo, mais respostas rápidas — o prazo médio é de 3 a 7 dias de uso.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">O guia funciona para qualquer tipo de MEI?</div>
-    <div class="faq-a">Sim. O guia tem exemplos de salão de beleza, delivery, loja de roupas, prestador de serviços, confeitaria e mais. Mas os princípios funcionam para qualquer negócio que atenda clientes pelo celular ou redes sociais.</div>
-  </div>
-
-  <div class="faq-item">
-    <div class="faq-q">Como recebo o guia após a compra?</div>
-    <div class="faq-a">Imediatamente após o pagamento você recebe um e-mail com o link para baixar o PDF e acessar todos os materiais bônus. Sem espera.</div>
-  </div>
+  <div class="faq-item"><div class="faq-q">Preciso saber de tecnologia para usar o guia?</div><div class="faq-a">Não. O guia foi feito exatamente para quem não tem experiência com tecnologia. Cada passo tem print de tela e explicação simples. Se você consegue usar o WhatsApp, você consegue seguir o guia.</div></div>
+  <div class="faq-item"><div class="faq-q">As ferramentas ensinadas são pagas?</div><div class="faq-a">Todas as ferramentas principais têm plano gratuito que é mais do que suficiente para um MEI começar. O guia foca em soluções que não precisam de assinatura para funcionar.</div></div>
+  <div class="faq-item"><div class="faq-q">Em quanto tempo vejo resultado?</div><div class="faq-a">A maioria dos compradores configura a automação de atendimento no WhatsApp no primeiro dia. Para sentir o impacto completo — mais tempo livre, mais conteúdo, mais respostas rápidas — o prazo médio é de 3 a 7 dias de uso.</div></div>
+  <div class="faq-item"><div class="faq-q">O guia funciona para qualquer tipo de MEI?</div><div class="faq-a">Sim. O guia tem exemplos de salão de beleza, delivery, loja de roupas, prestador de serviços, confeitaria e mais. Os princípios funcionam para qualquer negócio que atenda clientes pelo celular ou redes sociais.</div></div>
+  <div class="faq-item"><div class="faq-q">Como recebo o guia após a compra?</div><div class="faq-a">Imediatamente após o pagamento você recebe um e-mail com o link para baixar o PDF e acessar todos os materiais bônus. Sem espera.</div></div>
 </section>
 
-<!-- FINAL CTA -->
 <section class="final-cta">
   <h2>Seu tempo vale mais do que tarefas repetitivas</h2>
   <p>Pare de fazer no braço o que a IA pode fazer por você. Comece hoje.</p>
-  <a href="#pricing" class="btn-white">Garantir meu guia por R$67 →</a>
+  <a href="https://pay.kiwify.com.br/IvAZYSh" class="btn-white">Garantir meu guia por R$67 →</a>
 </section>
 
 <footer>
-  <p>© 2026 · Guia de Automações com IA para MEIs · Todos os direitos reservados</p>
+  <p>© 2026 · IA para MEI · Todos os direitos reservados · @iapramei</p>
 </footer>
 
 <script>
-  document.querySelectorAll('.faq-item').forEach(item => {
-    item.addEventListener('click', () => {
-      const isOpen = item.classList.contains('open');
-      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
-      if (!isOpen) item.classList.add('open');
-    });
+document.querySelectorAll('.faq-item').forEach(item=>{
+  item.addEventListener('click',()=>{
+    const isOpen=item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+    if(!isOpen)item.classList.add('open');
   });
+});
 </script>
 </body>
 </html>
